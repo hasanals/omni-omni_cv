@@ -6,11 +6,11 @@ map $http_upgrade $connection_upgrade {
 server {
     # port 443 is the default for https connections
     listen      443 ssl;
-    server_name flask.kliky.app;
+    server_name opencv.kliky.app;
 
     # where your SSL certificate is stored
-    ssl_certificate /etc/letsencrypt/live/flask.kliky.app/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/flask.kliky.app/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/opencv.kliky.app/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/opencv.kliky.app/privkey.pem;
 
     # prevent people from attempting to upload files >75MB
     client_max_body_size 75M;
